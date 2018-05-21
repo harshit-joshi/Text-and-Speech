@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/textToSpeech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="Text To Speech"
+        android:onClick="textToSpeech"/>
+
+    <Button
+        android:id="@+id/speechToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textToSpeech"
+        android:layout_centerVertical="true"
+        android:text="Speech to Text"
+        android:onClick="speechToText"/>
+
+
+
+</RelativeLayout>
+ <RelativeLayout
+     android:layout_width="240dp"
+     android:layout_height="match_parent"
+     android:gravity="start">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Drawer Menu"/>
+
+
+ </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
